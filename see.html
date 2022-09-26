@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <video src="./New video.mp4" autoplay loop></video>
+        <button class="play" onclick="dime()"><i  class="fas fa-play"></i></button>
+<script>
+    const container1 = document.querySelector('.container')
+    const play1 = document.querySelector('.play')
+            const video = document.querySelector('video')
+            play1.addEventListener('click',()=>{
+            })
+    function dime(){
+video.paused ? video.play() :video.pause()
+    }
+        
+    video.addEventListener('click',()=>{
+        video.paused ? video.play() :video.pause()
+
+    })
+document.addEventListener('keydown',e=>{
+    if(e.key.toLowerCase()=='k'){
+        video.paused ? video.play() :video.pause()
+
+    }
+})
+
+    video.addEventListener('pause',()=>{
+container1.classList.add('paused')
+    })
+</script>
+<style>
+   body{
+    
+    min-height: 100vh;
+
+}
+
+.container video{
+    max-width:1080px ;
+    width: 100%;
+    position: relative;
+   
+ 
+}
+
+    video{
+        width: 1388px;
+    }
+</style>
+     
+    </div>
+
+
+<button><a href="touch.html">finish</a></button>
+</body>
+</html>
